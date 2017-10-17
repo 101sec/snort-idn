@@ -1,4 +1,4 @@
-#IDN Homograph Attacks
+# IDN Homograph Attacks
 
 Internationalized Domain Names (IDNs) enable people around the world to use domain names in local languages and scripts. IDNs are formed using characters from different scripts, such as Arabic, Chinese, Cyrillic or Devanagari. These are encoded by the Unicode standard and used as allowed by relevant IDN protocols. These writing systems are encoded in multi-byte Unicode and are stored as ASCII strings using Punycode transcription. IDN’s were introduced in 1998 to support cultural groups across the world to experience a more open Internet experience  and are a known source for cyber-attacks. In February 2017, Google took countermeasures, limiting the use of IDN by banning certain characters and sharpening security protocols. Unfortunately, during my research in the past two months, I have found several malicious IDNs falling through the cracks.
 
