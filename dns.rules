@@ -3,7 +3,7 @@
 # This file contains a custom Snort rule to help detect IDN Homograph attacks.
 #
 # For the record, this rule has not been tested, verified or certified by
-# Sourcefire, Inc, and as such does not qualify as a "VRT Certified Rules".  
+# Sourcefire, Inc, and as such does not qualify under the "VRT Certified Rules".  
 #
 #-----------
 # DNS RULES
