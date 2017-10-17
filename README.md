@@ -33,3 +33,4 @@ As a security professional I am bound by strict rules and regulations regarding 
 # Detecting IDN Homograph Attacks 
 In the mean time, I have made a proof of concept detection capability for Snort to detect IDN homograph attacks. 
 
+![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/alert-ids.PNG)
