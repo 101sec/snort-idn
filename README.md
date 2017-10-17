@@ -24,7 +24,7 @@ When we decode this string using a base64 decoder we are stuck with what appears
 be897beeeb9350e17cb0c8bd4d4ed93797812d94
 ```
 Investigated if the above hash was already cracked using a variety of databases and wordlists. Unfortunately without luck so far.
-After monitoring this page for a while it occurs to me that the string changes over-time, which could indicate botnet / command and control (c2) activity. And this is the result as of now:
+After monitoring this page for a while it occurs to me that the string changes over-time, which could indicate botnet / command and control (c2) activity. After sending the report to Google and HSBC CERT, this is the result as of now:
 
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/hsbc2.PNG)
 
