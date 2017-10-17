@@ -9,9 +9,9 @@ For example: The domain name http://xn--80ak6aa92e.com used to translate to ар
 
 Cybercriminals are using IDN domains despite stronger policies. The following active domain names where encountered coincidently on the 23rd of September 2017 during regular security research.  
 
-- https://xn--b1a4a6c3v.com
-- xn--hsb-spa.com
-- https://c2-domain.com
+- [hxxps://xn--b1a4a6c3v.com]
+- [xn--hsb-spa.com]
+- [hxxps://c2-domain.com]
 
 After further analysis, this appeared to be a clickjacking botnet targeting customers and / or employees from the international HSBC bank. I decided to clone the website using a proxy for off-line analysis. The first thing that occurs to me is a blank index.html page containing nothing but the following base64 encoded string:
 ```
