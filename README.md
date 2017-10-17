@@ -3,7 +3,9 @@ Internationalized Domain Names (IDNs) enable people around the world to use doma
 Some characters from the Cyrillic alphabet still have strong resemblances to Western characters, making users of legitimate domain names vulnerable to so-called IDN homograph attacks. These IDN domains are typically in the format http://xn--[domain name].[extension]. When this link is opened in the browser the Punycode is automatically translated to display in the language-alphabet specified. 
 For example: The domain name http://xn--80ak6aa92e.com used to translate to аррӏе.com. (Cyrillic). Which certainly looks a lot like the legitimate domain apple.com (ASCII). 
 
+
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/8002.png)
+
 
 Cybercriminals are using IDN domains despite stronger policies. The following active domain names where encountered coincidently on the 23rd of September 2017 during regular security research.  
 
