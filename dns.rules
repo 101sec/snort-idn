@@ -1,12 +1,2 @@
-# Copyright 2017 J.J. Schonagen. All Rights Reserved.
-#
-# This file contains a custom Snort rule to help detect IDN Homograph attacks.
-#
-# For the record, this rule has not been tested, verified or certified by
-# Sourcefire, Inc, and as such does not qualify under the "VRT Certified Rules".  
-#
-#-----------
-# DNS RULES
-#-----------
 # Alert when a DNS Query is made for an IDN Domain
 alert udp $EXTERNAL_NET 53 -> $HOME_NET any (msg:"DNS Query for Suspicious IDN Domain"; sid:10000013; rev:001; content:"xn--"; fast_pattern; priority: 3; classtype:bad-unknown; nocase; metadata:created_at 2017_10_16, updated_at 2017_10_16;)
