@@ -5,12 +5,15 @@ Some characters from the Cyrillic alphabet still have strong resemblances to Wes
 For example: The domain name http://xn--80ak6aa92e.com used to translate to аррӏе.com. (Cyrillic)
 Which certainly looks a lot like the legitimate domain apple.com (ASCII). 
 Another example would be http://xn--j1akc.com which still translates to kpn.com
+![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/kpn.PNG)
+
+
 
 The following active domain names where encountered coincidently on the 23rd of September 2017 during regular security research.
 
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/hsbc.PNG)
 
-As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure and will be released to the public shortly. 
+As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure and will be released to the public since Google releases a  
 
 In the mean time, I have made a proof of concept detection capability for Snort to detect IDN homograph attacks. 
 
