@@ -5,6 +5,7 @@ Some characters from the Cyrillic alphabet still have strong resemblances to Wes
 For example: The domain name http://xn--80ak6aa92e.com used to translate to аррӏе.com. (Cyrillic)
 Which certainly looks a lot like the legitimate domain apple.com (ASCII). 
 Another example would be http://xn--j1akc.com which still translates to kpn.com
+
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/kpn.PNG)
 
 
