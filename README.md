@@ -5,12 +5,26 @@ For example: The domain name http://xn--80ak6aa92e.com used to translate to ар
 
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/8002.png)
 
+Cybercriminals are using IDN domains despite stronger policies. The following active domain names where encountered coincidently on the 23rd of September 2017 during regular security research.  
 
-Cybercriminals are using IDN domains despite stronger policies. The following active domain names where encountered coincidently on the 23rd of September 2017 during regular security research.
+- https://xn--b1a4a6c3v.com
+- xn--hsb-spa.com
+- https://c2-domain.com
 
-![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/hsbc.PNG)
+After further analysis, this appeared to be a clickjacking botnet targeting customers and / or employees from the international HSBC bank. I decided to clone the website using a proxy for off-line analysis. The first thing that occurs to me is a blank index.html page containing nothing but the following base64 encoded string:
+```
+YmU4OTdiZWVlYjkzNTBlMTdjYjBjOGJkNGQ0ZWQ5Mzc5NzgxMmQ5NCAgLQo=
+```
+When we decode this string using a base64 decoder we are stuck with what appears to be a 40-byte SHA-1 hashed string:
+```
+be897beeeb9350e17cb0c8bd4d4ed93797812d94
+```
+Investigated if the above hash was already cracked using a variety of databases and wordlists. Unfortunately without luck so far.
+After monitoring this page for a while it occurs to me that the string changes over-time, which could indicate botnet / command and control (c2) activity. And this is the result as of now:
 
-As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure and will be released to the public since Google releases a  
+![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/hsbc2.PNG)
+
+As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure. 
 
 In the mean time, I have made a proof of concept detection capability for Snort to detect IDN homograph attacks. 
 
