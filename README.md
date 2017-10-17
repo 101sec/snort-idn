@@ -28,7 +28,7 @@ After monitoring this page for a while it occurs to me that the string changes o
 
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/hsbc2.PNG)
 
-As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure. Since HSBC did not request more time I am allowed to share this with the public.
+As a security professional I am bound by strict rules and regulations regarding my work and believe in responsible disclosure. Therefore, I have to state that I carefully researched this website using passive technology for the most part and relied solely on open-source information. I did not cause any damage or conducted any hacking activity while investigating this and did not harm HSBC or its customers in any way or form. The findings have been under responsible disclosure. Since HSBC did not request more time, I am allowed to share this with the public.
 
 # Detecting IDN Homograph Attacks 
 In the mean time, I have made a proof of concept detection capability for Snort to detect IDN homograph attacks. 
