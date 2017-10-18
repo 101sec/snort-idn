@@ -1,2 +1,11 @@
+#-----------
+# DNS RULES
+#-----------
 # Alert when a DNS Query is made for an IDN Domain
 alert udp $EXTERNAL_NET 53 -> $HOME_NET any (msg:"DNS Query for Suspicious IDN Domain"; sid:10000013; rev:001; content:"xn--"; fast_pattern; priority: 3; classtype:bad-unknown; nocase; metadata:created_at 2017_10_16, updated_at 2017_10_16;)
+# Alert when TCP over DNS connection is detected involving an IDN Domain
+alert tcp $EXTERNAL_NET 53 -> $HOME_NET any (msg:"Possible IDN Homograph attack ongoing. TCP over DNS traffic detected for Suspicious IDN Domain"; sid:10000015; rev:001; content:"xn--"; fast_pattern; priority: 4; classtype:bad-unknown; nocase; metadata:created_at 2017_10_17, updated_at 2017_10_17;)
+# Alert when UDP traffic is detected from or to a Suspicious IDN Domain on a non-DNS port. 
+alert udp any !53 -> any !53 (msg:"Possible IDN Homograph attack ongoing. UDP connection detected on non-DNS port for Suspicious IDN Domain"; sid:10000014; rev:001; content:"xn--"; fast_pattern; priority: 6; classtype:bad-unknown; nocase; metadata:created_at 2017_10_17, updated_at 2017_10_17;)
+# Alert when inbound TCP traffic is detected from a Suspicious IDN Domain on a non-DNS port which is not TCP over DNS. 
+alert tcp $EXTERNAL_NET !53 -> $HOME_NET any (msg:"Possible IDN Homograph attack ongoing. Inbound TCP connection detected on non-DNS port from Suspicious IDN Domain"; sid:10000016; rev:001; content:"xn--"; fast_pattern; priority: 8; classtype:bad-unknown; nocase; metadata:created_at 2017_10_17, updated_at 2017_10_17;)
