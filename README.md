@@ -39,21 +39,19 @@ In the mean time, I have made a proof of concept detection capability for Snort 
 Added event_filters to prevent information overload when for instance malware starts to phone home to an IDN domain. This will limit to logging 1 event per 60 seconds per IP triggering for both priority 8 scenario's. Want to see all logged alerts when each rule is triggered? Comment out rule 8-14 to see all logged alerts when a rule is triggered (paranoid mode). 
 
 ## Background: 
-In Snort 2.8.5, the generation, processing, and logging of events got changed. Prior to Snort 2.8.5. we could control the amount of alerts, triggered per IP and timespan with the in-rule filter `
+In Snort 2.8.5, the generation, processing, and logging of events got changed. Prior to Snort 2.8.5. we could control the amount of alerts, triggered per IP and timespan with the in-rule filter`
 `
 `
 threshold
 `
 `
-`
-This command is now deprecated and replaced with `
+`This command is now deprecated and replaced with`
 `
 `
 event_filter
 `
 `
-`
-which has similiar functionality, except that it is not permitted within a rule. You can find more information on the new filters here:
+`which has similiar functionality, except that it is not permitted within a rule. You can find more information on the new filters here:
 
 https://snort.org/faq/readme-filters
 
