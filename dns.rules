@@ -1,6 +1,6 @@
 # Copyright 2017 Jordan Schonagen. All Rights Reserved.
 #
-# This file contains custom rules that where created and tested as a detection capability against all sorts of # IDN Homograph Attacks. 
+# This file contains custom rules that where created and tested as a Proof-of-Concept detection capability against IDN Homograph Attacks. 
 # 
 #-----------
 # DNS RULES
