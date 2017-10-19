@@ -35,7 +35,7 @@ In the mean time, I have made a proof of concept detection capability for Snort 
 
 ![alt text](https://raw.githubusercontent.com/101sec/snort-idn/master/screenshots/alert-ids-page-visit.png)
 
-##Update: Added event_filters to prevent information overload when for instance malware phones home to an IDN domain. This will limit to logging 1 event per 60 seconds per IP triggering for both priority 8 scenario's. Want to see all logged alerts when each rule is triggered? Comment out rule 8-14 to enable paranoid mode. 
+### Update: Added event_filters to prevent information overload when for instance malware phones home to an IDN domain. This will limit to logging 1 event per 60 seconds per IP triggering for both priority 8 scenario's. Want to see all logged alerts when each rule is triggered? Comment out rule 8-14 to enable paranoid mode. 
 
 Background: In Snort 2.8.5, the generation, processing, and logging of events got changed. Prior to Snort 2.8.5. we could control the amount of alerts, triggered per IP and timespan with the in-rule filter `
 `
