@@ -44,7 +44,7 @@ threshold
 `
 `
 `
-This command is now deprecated with `
+This command is now deprecated and replaced with `
 `
 `
 event_filter
